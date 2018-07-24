@@ -1,9 +1,9 @@
 module.exports = function (req, res) {  
-    res.send(
-        JSON.stringify(
-            {
-                devices: [ {device: 1}],
-                result: "success"
-            }, null, 3)
-    )
+    req.logger.debug("get.devices")
+    res.send({ 
+        devices: [
+            {device: 2}
+        ], 
+        result: "success"
+    })
 }
