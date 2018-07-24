@@ -1,4 +1,5 @@
 var router = require('express').Router();  
 router.get('/', require('./get'));  
-router.use('/:id',require('./device/index'))
+router.get('/dtu/:id',require('./dtu/index'))
+router.get('/cpu/:id',require('./cpu/index'))
 module.exports = router;

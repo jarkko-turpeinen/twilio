@@ -1,9 +1,10 @@
 module.exports = function (req, res) {  
-    req.logger.debug("get.devices")
+    req.logger.trace("method=get.devices")
+    let result = req.db.select()
     res.send({ 
         devices: [
             {device: 2}
         ], 
-        result: "success"
+        result: result
     })
 }

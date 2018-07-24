@@ -1,11 +1,8 @@
 module.exports = function (req, res) { 
-    req.logger.debug("post.device")
-    // TODO your stuff
+    req.logger.trace("method=post.cpu device=" + req.params.id)
     let result = req.db.merge()
     res.send({
-        devices: [
-            {device: 2}
-        ],
+        device: req.params.id,
         result: result
     })
 }
