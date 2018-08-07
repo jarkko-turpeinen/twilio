@@ -1,7 +1,7 @@
-module.exports = function (req, res) {  
-    logger.trace("method=get.iot")        
-    kafka.send('1', 'result', process.env.salesforce_topic_work_status_change)
-    res.send({ 
+module.exports = (req, res) => {  
+    logger.trace("method=/iot/get")    
+    mhub.sendWorkStatusChange('1', 'method=get.iot')
+    res.status(200).json({ 
         iot: [
             {iot: 2}
         ], 

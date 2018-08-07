@@ -1,3 +1,3 @@
-var router = require('express').Router()
-router.get('/', require('./get'))
-module.exports = router
+const routes = require('express').Router()
+routes.get('/', require('./get'))
+module.exports = routes

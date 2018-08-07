@@ -1,5 +1,5 @@
-module.exports = function (req, res) { 
-    logger.trace("method=post.dtu device=" + req.params.id)
+module.exports = (req, res) => { 
+    logger.trace("method=/devices/:id/dtu/post device=" + req.params.id)
     let result = req.db.merge()
     res.send({
         device: req.params.id,

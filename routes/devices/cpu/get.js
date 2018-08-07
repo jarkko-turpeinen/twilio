@@ -1,5 +1,5 @@
-module.exports = function (req, res) {  
-    logger.trace("method=get.cpu device=" + req.params.id)
+module.exports = (req, res) => {  
+    logger.trace("method=/devices/:id/cpu/get device=" + req.params.id)
     let result = "req.db.select()"
     res.send({
         device: req.params.id,

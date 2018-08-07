@@ -1,5 +1,5 @@
-var router = require('express').Router()
-router.get('/dtu/:id', require('./get'))
-router.post('/dtu/', require('./post'))
-router.delete('/dtu/:id', require('./delete'))
-module.exports = router
+const routes = require('express').Router({ mergeParams: true })
+routes.get('/', require('./get'))
+routes.post('/', require('./post'))
+routes.delete('/', require('./delete'))
+module.exports = routes
