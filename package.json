@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jarkko-turpeinen/twilio.git"
+    "url": "git+https://github.com/jarkko-turpeinen/twilio-app.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/jarkko-turpeinen/twilio/issues"
+    "url": "https://github.com/jarkko-turpeinen/twilio-app/issues"
   },
-  "homepage": "https://github.com/jarkko-turpeinen/twilio#readme",
+  "homepage": "https://github.com/jarkko-turpeinen/twilio-app#readme",
   "dependencies": {
     "express": "^4.16.3",
     "twilio": "^3.19.0"
