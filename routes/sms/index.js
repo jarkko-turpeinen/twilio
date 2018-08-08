@@ -1,3 +1,3 @@
 const routes = require('express').Router()
-routes.get('/', require('./get'))
+routes.post('/', require('./post'))
 module.exports = routes

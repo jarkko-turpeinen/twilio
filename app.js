@@ -1,15 +1,6 @@
-// Load environment variables from .env file for development environment
-require('dotenv/config')
-
-// Global logger object for app logic use
-require('./logger')
-
-// Global mhub object for app logic use
-require('./mhub')
-
 const express = require('express')
 const app = express()
-
+const port = process.env.SERVER_PORT || 8080
 /**
  * Routes are organised by directories. Root path / base directory is /routes.
  * Each directory's index.js defines routes below that route.
@@ -17,5 +8,5 @@ const app = express()
  * implement logic in those method files per directory aka path.
  */
 app.use('/', require('./routes'))
-app.on('error', (error) => logger.error("error=app.error: " + error))
-app.listen(process.env.server_port, () => logger.info('info=Serving http on port ' + process.env.port ))
+app.on('error', (error) => console.error("error=app.error: " + error))
+app.listen(port, () => console.info('info=Serving http on port ' + port))

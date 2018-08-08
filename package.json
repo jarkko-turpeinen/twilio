@@ -1,7 +1,7 @@
 {
-  "name": "express-rest",
+  "name": "twilio-app",
   "version": "1.0.0",
-  "description": "Express REST service for IoT devices",
+  "description": "Express REST API for sending SMS messages",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -9,26 +9,16 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jarkko-turpeinen/express-rest.git"
+    "url": "git+https://github.com/jarkko-turpeinen/twilio.git"
   },
-  "keywords": [
-    "Express",
-    "REST",
-    "IoT"
-  ],
-  "author": "Jarkko Turpeinen",
-  "license": "MIT",
+  "author": "",
+  "license": "ISC",
   "bugs": {
-    "url": "https://github.com/jarkko-turpeinen/express-rest/issues"
+    "url": "https://github.com/jarkko-turpeinen/twilio/issues"
   },
-  "homepage": "https://github.com/jarkko-turpeinen/express-rest#readme",
+  "homepage": "https://github.com/jarkko-turpeinen/twilio#readme",
   "dependencies": {
-    "axios": "^0.18.0",
-    "dotenv": "^6.0.0",
-    "expect": "^23.4.0",
     "express": "^4.16.3",
-    "kafka-node": "^2.6.1",
-    "mocha": "^5.2.0",
-    "nano": "^6.4.4"
+    "twilio": "^3.19.0"
   }
 }
